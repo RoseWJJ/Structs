@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">  
+  
+<struts>  
+    <package name="defalut" namespace="/" extends="struts-default">  
+  		<!-- 访问名称 -->
+        <action name="hello" class="com.et.day01.Hello" >    
+        	<!-- 配置方法的返回值  到不同的页面 -->
+            <result name="bb">/index.jsp</result>
+        </action>
+        	<!-- 访问名称 -->
+        <action name="demo" class="com.et.day01.Demo" >    
+        	<!-- 配置方法的返回值  到不同的页面 -->
+            <result name="ok">/wellcom.jsp</result>
+        </action>  
+         
+    </package>  
+
+  </struts>  
+  
